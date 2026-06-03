@@ -1,6 +1,7 @@
-CARA MENGGUNAKAN SSH DI VSCODE
+# CARA MENGGUNAKAN SSH DI VSCODE
 
-Pastikan sudah install git
+## Pastikan sudah install git
+
 1. Cek versi git:
    ```cpp
    git --version
@@ -52,19 +53,32 @@ Pastikan sudah install git
    ssh-add ~/.ssh/id_rsa
    ```
    Salin Public Key:
-    ```cpp
+   ```cpp
    cat ~/.ssh/id_rsa.pub
    ```
    Copy hasilnya
 
    Tambahkan ke GitHub
+
    Buka:
-   github.com⁠
-   Klik New SSH Key → paste key tadi → Save.
+   - github.com⁠
+   - Settings
+     <img width="1240" height="585" alt="image" src="https://github.com/user-attachments/assets/0314cf1b-1c3c-4a10-b7cb-dc75258f1c21" />
 
-   
-   
+   - Klik New SSH Key → paste key tadi → Save.
 
-1. masuk ke git bash dan pindah ke folder proyek, misal saya pakai XAMPP dan folder proyeknya di htdocs
-``cd /c/xampp/htdocs``
-2. lakukan git 
+   Tes Koneksi:
+   ```cpp
+   ssh -T git@github.com
+   ```
+   Jika berhasil:
+   ```cpp
+   Hi username! You've successfully authenticated...
+   ```
+   <img width="642" height="62" alt="image" src="https://github.com/user-attachments/assets/dc8c1483-ce3c-442e-a549-33ff98df5a6f" />
+
+---
+
+## Cara clone repo lewat ssh
+
+1. salin 
