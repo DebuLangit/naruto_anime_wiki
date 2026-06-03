@@ -1,3 +1,5 @@
+<?php require_once '../config/auth_check.php'; ?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -17,7 +19,7 @@
 
     <nav>
         <ul>
-            <li><a href="../index.php">HOME</a></li>
+            <li><a href="../home.php">HOME</a></li>
             <li><a href="merchandise.php">MERCH</a></li>
             <li><a href="../auth/login.php">LOGIN</a></li>
         </ul>
