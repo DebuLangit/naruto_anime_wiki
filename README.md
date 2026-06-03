@@ -45,8 +45,24 @@ Pastikan sudah install git
    
    Jalankan SSH Agent:
    ```cpp
+   eval "$(ssh-agent -s)"
+   ```
+   Tambahkan Key ke SSH Agent:
+   ```cpp
+   ssh-add ~/.ssh/id_rsa
+   ```
+   Salin Public Key:
+    ```cpp
+   cat ~/.ssh/id_rsa.pub
+   ```
+   Copy hasilnya
+
+   Tambahkan ke GitHub
+   Buka:
+   github.com⁠
+   Klik New SSH Key → paste key tadi → Save.
+
    
-   f
    
 
 1. masuk ke git bash dan pindah ke folder proyek, misal saya pakai XAMPP dan folder proyeknya di htdocs
