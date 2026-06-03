@@ -5,14 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Boruto</title>
 
-    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
 
 <header>
 
     <div class="logo">
-        <img src="assets/img/naruto1_logo.jpg" alt="Naruto Logo">
+        <img src="../img/naruto1_logo.jpg" alt="Naruto Logo">
     </div>
 
     <nav>
@@ -31,15 +31,15 @@
 
 <section class="anime-tabs">
 
-    <a href="../index.php" class="tab">
+    <a href="../naruto/index.php" class="tab">
         Naruto
     </a>
 
-    <a href="shippuden.php" class="tab">
+    <a href="../shippuden/index.php" class="tab">
         Naruto Shippuden
     </a>
 
-    <a href="boruto.php" class="tab active">
+    <a href="../boruto/index.php" class="tab active">
         Boruto
     </a>
 
@@ -49,7 +49,7 @@
 
     <div class="summary">
 
-        <img src="../assets/img/boruto_logo.jpg"
+        <img src="../img/boruto_logo.jpg"
              alt="Boruto Logo"
              class="anime-logo">
 
@@ -62,7 +62,7 @@
     </div>
 
     <div class="poster">
-        <img src="../assets/img/boruto.container.jpg"
+        <img src="../img/boruto.container.jpg"
              alt="Boruto">
     </div>
 
@@ -114,7 +114,7 @@
     Naruto Fan Portal © 2026
 </footer>
 
-<script src="../assets/js/script.js"></script>
+<script src="../js/script.js"></script>
 
 </body>
 </html>
