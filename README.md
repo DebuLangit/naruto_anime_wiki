@@ -81,4 +81,81 @@
 
 ## Cara clone repo lewat ssh
 
-1. salin 
+1. Salin command ssh di repo:
+   <img width="961" height="505" alt="image" src="https://github.com/user-attachments/assets/1020d9aa-4257-41a6-9d05-2864936c8f85" />
+
+2. Di Git Bash, pindah dulu ke folder yang diinginkan:
+
+   Contoh ke `htdocs` karena saya pake XAMPP:
+   ```cpp
+   cd /c/xampp/htdocs
+   ```
+   
+3. Lalu clone:
+   ```cpp
+   git clone git@github.com:username/nama-repo.git
+   ```
+   Contoh:
+   ```cpp
+   git clone git@github.com:alivvio56-alt/RESPONSI_PEMWEB.git
+   ```
+   
+4. Masuk ke folder project:
+   ```cpp
+   cd nama-repo
+   ```
+   
+5. Buka di VS Code:
+   Kalau VS Code sudah terinstall:
+   ```cpp
+   code .
+   ```
+---
+
+## CARA PUSH DAN PULL KE REPO GITHUB DARI VSCODE
+
+### Push : untuk memperbarui/update repo di github setelah koding/menambah file baru di folder proyek
+
+Setelah selesai ngoding
+
+1. Buka terminal lalu langkah pertama adalah git add:
+   ```cpp
+   git add .
+   ```
+   
+2. Selanjutnya, menambah comment:
+   ```cpp
+   git commit -m "Menambahkan fitur X"
+   ```
+   isi coment harus berbeda setiap perintah
+
+3. Terakhir git push:
+   ```cpp
+   git push
+   ```
+   Cek repo di github, refresh, maka repo berhasil di update
+   
+
+### Pull : untuk mengambil/unduh, setelah repo di github ada perubahan dari anggota lain
+
+ ```cpp
+ git pull
+ ```
+
+Jadi urutannya biasanya:
+ ```cpp
+git pull
+# coding di VS Code
+git add .
+git commit -m "update"
+git push
+```
+
+
+
+
+
+
+
+
+
