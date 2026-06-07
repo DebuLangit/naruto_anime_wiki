@@ -1,31 +1,16 @@
-<?php require_once '../config/auth_check.php'; ?>
+<?php
+// ============================================
+// FILE: shippuden/index.php
+// ============================================
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Naruto Shippuden</title>
+require_once '../config/auth_check.php';
+require_once '../includes/functions.php';
 
-    <link rel="stylesheet" href="../css/style.css">
-</head>
-<body>
+$page_title = 'Naruto Shippuden';
+$base_path  = '../';
 
-<header>
-
-    <div class="logo">
-        <img src="../img/naruto1_logo.jpg" alt="Naruto Logo">
-    </div>
-
-    <nav>
-        <ul>
-            <li><a href="../home.php">HOME</a></li>
-            <li><a href="merchandise.php">MERCH</a></li>
-            <li><a href="../auth/login.php">LOGIN</a></li>
-        </ul>
-    </nav>
-
-</header>
+require_once '../includes/header.php';
+?>
 
 <section class="banner">
     <h1>ANIME</h1>
@@ -79,11 +64,8 @@
         <button class="accordion-btn">
             EP1-32 | Kazekage Rescue Mission
         </button>
-
         <div class="accordion-content">
-            <p>
-                Team Kakashi attempts to rescue Gaara from Akatsuki.
-            </p>
+            <p>Team Kakashi attempts to rescue Gaara from Akatsuki.</p>
         </div>
     </div>
 
@@ -91,11 +73,8 @@
         <button class="accordion-btn">
             EP113-143 | Itachi Pursuit Mission
         </button>
-
         <div class="accordion-content">
-            <p>
-                Sasuke searches for Itachi and forms Team Hebi.
-            </p>
+            <p>Sasuke searches for Itachi and forms Team Hebi.</p>
         </div>
     </div>
 
@@ -103,21 +82,11 @@
         <button class="accordion-btn">
             EP262-321 | Fourth Great Ninja War
         </button>
-
         <div class="accordion-content">
-            <p>
-                The Allied Shinobi Forces battle Madara and Obito.
-            </p>
+            <p>The Allied Shinobi Forces battle Madara and Obito.</p>
         </div>
     </div>
 
 </section>
 
-<footer>
-    Naruto Fan Portal © 2026
-</footer>
-
-<script src="../js/script.js"></script>
-
-</body>
-</html>
+<?php require_once '../includes/footer.php'; ?>

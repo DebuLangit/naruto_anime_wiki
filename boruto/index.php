@@ -1,32 +1,14 @@
-<?php require_once '../config/auth_check.php'; ?>
+<?php
+require_once '../config/auth_check.php';
+require_once '../includes/functions.php';
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Boruto</title>
+$page_title = 'Naruto';   // ← ganti judul
+$base_path  = '../';
 
-    <link rel="stylesheet" href="../css/style.css">
-</head>
-<body>
+require_once '../includes/header.php';
+?>
 
-<header>
-
-    <div class="logo">
-        <img src="../img/naruto1_logo.jpg" alt="Naruto Logo">
-    </div>
-
-    <nav>
-        <ul>
-            <li><a href="../home.php">HOME</a></li>
-            <li><a href="merchandise.php">MERCH</a></li>
-            <li><a href="../auth/login.php">LOGIN</a></li>
-        </ul>
-    </nav>
-
-</header>
-
+<!-- konten halaman di sini -->
 <section class="banner">
     <h1>ANIME</h1>
 </section>
@@ -112,11 +94,6 @@
 
 </section>
 
-<footer>
-    Naruto Fan Portal © 2026
-</footer>
+<?php require_once '../includes/footer.php'; ?>
 
-<script src="../js/script.js"></script>
-
-</body>
-</html>
+<?php require_once '../config/auth_check.php'; ?>
