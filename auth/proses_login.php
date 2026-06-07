@@ -42,7 +42,7 @@ $_SESSION['role']     = $user['role'];
 
 // Arahkan berdasarkan role
 if ($user['role'] === 'admin') {
-    header('Location: ../home.php');
+    header('Location: ../dashboard.php');
 } else {
     header('Location: ../home.php');
 }
